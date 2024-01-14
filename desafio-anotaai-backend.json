@@ -1,0 +1,269 @@
+{
+  "info": {
+    "name": "MARKETPLACE",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Category",
+      "item": [
+        {
+          "name": "CREATE CATEGORY",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/8.4.5",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": "{{ _.url }}/api/category",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\t\"id\": \"393948882828\",\n\t\t\"title\": \"Teste\",\n\t\t\"description\": \"\",\n\t\t\"ownerId\": \"4444444\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "DELETE CATEGORY",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/8.4.5",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": "{{ _.url }}/api/category/659d55810304df732ddd4586",
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET ALL CATEGORY",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/8.4.5",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": "{{ _.url }}/api/category",
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "UPDATE CATEGORY",
+          "event": [],
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/8.4.5",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": "{{ _.url }}/api/category/659d558b0304df732ddd4587",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\t\"title\": \"Oieeee\",\n\t\t\"description\": \"kkkk\",\n\t\t\"ownerId\": \"4444444\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "item": [
+        {
+          "name": "CREATE PRODUCT",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/8.4.5",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": "{{ _.url }}/api/product",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\t\"title\": \"Produto para postar no tópico\",\n\t\t\"description\": \"\",\n\t\t\"ownerId\": \"4444444\",\n\t\t\"categoryId\": \"659d558b0304df732ddd4587\",\n\t\t\"price\": 10000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "DELETE PRODUCT",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/8.4.5",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": "{{ _.url }}/api/product/659d56584e411358031d0969",
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "GET ALL PRODUCT",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/8.4.5",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": "{{ _.url }}/api/product",
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "UPDATE PRODUCT",
+          "event": [],
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "disabled": false,
+                "type": "default"
+              },
+              {
+                "key": "User-Agent",
+                "value": "insomnia/8.4.5",
+                "disabled": false,
+                "type": "default"
+              }
+            ],
+            "url": "{{ _.url }}/api/product/659d57644e411358031d096c",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\t\"title\": \"Oieeee\",\n\t\t\"description\": \"kkkk\",\n\t\t\"ownerId\": \"4444444\",\n\t\t\"price\": 1005\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": " _.url ",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
